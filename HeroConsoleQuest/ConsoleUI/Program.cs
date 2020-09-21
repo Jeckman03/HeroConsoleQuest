@@ -17,6 +17,8 @@ namespace ConsoleUI
         public static int userMana = 50;
         public static int userGold = 0;
 
+        public static string userAttackSelection;
+
         //to keep the game going or not
         public static bool playGame = true;
 
@@ -33,6 +35,8 @@ namespace ConsoleUI
                 Enemies goblin = new Enemies("Goblin", 8, 3, 20, 0);
 
                 Enemies.EnemyEncounter(goblin.name, goblin.health);
+
+                userAttackSelection = CharacterActions.AttackOptions();
 
                 player.health = Attacks.EnemyAttack(goblin.attack, player.health, player.defend);
 

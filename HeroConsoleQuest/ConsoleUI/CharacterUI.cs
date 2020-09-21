@@ -20,7 +20,7 @@ namespace ConsoleUI
         {
             Console.Clear();
             Boarders();
-            Color.HeaderColor($"        Hero: { hero }    Level: { level }    HP: { health }    MP: { mana }    Gold: { gold }");
+            Console.WriteLine($"        Hero: { hero }    Level: { level }    HP: { health }    MP: { mana }    Gold: { gold }");
             Boarders();
         }
 

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attacks.cs" />
+    <Compile Include="CharacterActions.cs" />
     <Compile Include="Characters.cs" />
     <Compile Include="CharacterUI.cs" />
     <Compile Include="Color.cs" />
